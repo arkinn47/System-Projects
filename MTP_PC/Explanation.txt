@@ -1,0 +1,5 @@
+The purpose of line_processor is to take lines of ascii characters and pass them through four thread, all accessing
+and depositing characters to buffers after having modified the characters until they eventually
+come out in the stdout. 
+The use of mutex locks was necessary to coordinate the thread to precent race conditions. 
+In addition, it should be possible to submit a "STOP" through stdin to terminate the program.
