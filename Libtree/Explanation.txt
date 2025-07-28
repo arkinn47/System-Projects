@@ -1,0 +1,3 @@
+The purpose of the following program is to access the files and directories of the filesystem on a computer.
+The lt3.c file provides the functionality of the various functions to process the CLI inputs to access
+different files and directories. The librtree.h header file enables main.c to access the lt3.c functions.
