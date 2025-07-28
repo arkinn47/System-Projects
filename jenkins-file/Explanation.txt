@@ -1,0 +1,6 @@
+This folder contains a Jenkinsfile that was written in accordance with specifications given in the tutorial "Introduction to Jenkins, CI/CD, and DevOps for Beginners", 
+by Valentin Despa, and can be found at the URL: https://www.youtube.com/watch?v=soIpt3c7tVE.
+
+It basically uses the Groovy language to describes a Jenkins pipeline to automate the build, test, and deployment of a web page with the the Jenkins logo rotating in the center.
+The forked version of the repo for the project can be found at https://github.com/arkinn47/learn-jenkins-app.git.
+The project was originally forked from https://github.com/vdespa/learn-jenkins-app.git. 
