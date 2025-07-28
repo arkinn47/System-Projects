@@ -1,1 +1,1 @@
-f
+The base64 encoder encodes ascii character strings taken from either a file or typed into the stdin, and then encodes from ASCII bytes into the base64 format and then put outputs the characters to stdout. Also for every 76 characters there is a line break.
