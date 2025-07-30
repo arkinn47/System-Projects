@@ -3,3 +3,7 @@ and depositing characters to buffers after having modified the characters until 
 come out in the stdout. 
 The use of mutex locks was necessary to coordinate the thread to precent race conditions. 
 In addition, it should be possible to submit a "STOP" through stdin to terminate the program.
+
+
+Edited veresion was added in order to remove uncessary commented out code.
+Additional comments were added to enhance visibility.
