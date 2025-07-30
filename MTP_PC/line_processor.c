@@ -321,6 +321,7 @@ void *output_thread(){
      // if(item_ot[0] == '\n') exit(0);
       if(item_ot[0] == '\n'){
           //put_buffer_3('\n');
+          write(STDOUT_FILENO, items_ot, 81);
           break;}
 
      /*printf("======================SDFVFVS===================%d\n", printed_characters );
