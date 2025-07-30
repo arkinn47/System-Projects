@@ -171,6 +171,7 @@ void *output_thread(){
      write(STDOUT_FILENO, items_ot, 81);
      }
       if(item_ot[0] == '\n'){
+          write(STDOUT_FILENO, items_ot, 81);
           break;}
      }
 return NULL;} 
