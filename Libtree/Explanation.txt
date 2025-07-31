@@ -1,3 +1,33 @@
 The purpose of the following program is to access the files and directories of the filesystem on a computer.
 The lt3.c file provides the functionality of the various functions to process the CLI inputs to access
 different files and directories. The librtree.h header file enables main.c to access the lt3.c functions.
+
+The edited version removes commented out code to enhance readability.
+
+Functions used are listed below with description and lines number.
+
+/* Simply sets up the initial recursion. Nothing for you to change here.  line 71*/
+tree_print(char const *path, struct tree_options _opts)
+
+/* Prints recurses through the directories and prints files line 86*/
+static int tree_print_recurse(struct fileinfo finfo)  
+
+/*@brief Helper function that prints formatted output of the modestring, username, groupname, file
+ * size, and link target (for links). line 66 */
+static int print_path_info(struct fileinfo finfo)
+
+
+/*@brief File comparison function, used by qsort line 205*/
+static int filecmp(void const *_lhs, void const *_rhs)
+
+/* @brief Reads all files in a directory and populates a fileinfo array line 235*/
+static int read_file_list(DIR *dirp, struct fileinfo **file_list, size_t *file_count)
+
+
+/*@brief Frees dynamically allocated file list (array of fileinfo objects) line 261*/
+static void
+free_file_list(struct fileinfo **file_list, size_t file_count)
+
+
+/* @brief Returns a 9-character modestring for the given mode argument. line 277*/
+static char *mode_string(mode_t mode)
