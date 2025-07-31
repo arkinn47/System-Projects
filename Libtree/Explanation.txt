@@ -13,7 +13,7 @@ tree_print(char const *path, struct tree_options _opts)
 static int tree_print_recurse(struct fileinfo finfo)  
 
 /*@brief Helper function that prints formatted output of the modestring, username, groupname, file
- * size, and link target (for links). line 66 */
+ * size, and link target (for links). line 166 */
 static int print_path_info(struct fileinfo finfo)
 
 
