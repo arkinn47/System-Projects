@@ -242,8 +242,10 @@ read_file_list(DIR *dirp, struct fileinfo **file_list, size_t *file_count)
     
     /* Skip the "." and ".." subdirectories */
     if (strcoll(de->d_name, ".") == 0 || strcoll(de->d_name, "..") == 0) continue;
-
+    
     /* TODO: Skip hidden files? */
+    /*This was the source of a major bug. Since I did not orginally know that hidden files
+      started with a period, I needed to add add the below line to not print out the hidden files.*/
     if ( !opts.all && strncmp(de->d_name, ".", 1) == 0) continue;
 
     ++(*file_count);
