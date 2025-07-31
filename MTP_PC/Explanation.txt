@@ -7,3 +7,30 @@ In addition, it should be possible to submit a "STOP" through stdin to terminate
 
 Edited veresion was added in order to remove uncessary commented out code.
 Additional comments were added to enhance visibility.
+
+Threads and associated functions with line numbers.
+
+//Thread 1 line 53
+  void put_buffer_1(char character_1)
+  void *get_input()
+
+
+//Thread 2 line 78
+  char get_buffer_1()
+  void put_buffer_2(char character_2)
+  void *line_seperator()
+
+//Thread 3 line 112
+  char get_buffer_2()
+  void put_buffer_3(char character_3)
+  void *plus_sign()
+
+//Thread 4 line 157
+  char get_buffer_3()
+  void *output_thread()
+
+Main function line 185:
+  int main(){pthread_t th0, th1, th2, th3;
+
+
+
