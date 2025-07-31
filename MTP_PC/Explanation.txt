@@ -5,10 +5,10 @@ The use of mutex locks was necessary to coordinate the thread to precent race co
 In addition, it should be possible to submit a "STOP" through stdin to terminate the program.
 
 
-Edited veresion was added in order to remove uncessary commented out code.
+Edited veresion (edited_mtp.c) was added in order to remove uncessary commented out code.
 Additional comments were added to enhance visibility.
 
-Threads and associated functions with line numbers.
+Threads and associated functions with line numbers found in line_proceessor.c.
 
 //Thread 1 line 53
   void put_buffer_1(char character_1)
